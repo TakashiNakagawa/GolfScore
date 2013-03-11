@@ -17,6 +17,7 @@
 }
 
 - (void)tearDown {
+    [NSThread sleepForTimeInterval:1.0];
     hole = nil;
 }
 
@@ -25,8 +26,17 @@
 }
 
 - (void)testHoleCanAddStroke {
-    [hole addStrokeAtLocation:nil];
-    [hole addStrokeAtLocation:nil];
+    CLLocationCoordinate2D loc1, loc2;
+    loc1.latitude = 34.701909;
+    loc1.longitude = 135.4949770;
+    CLLocation *nowLocation = [[CLLocation alloc] initWithLatitude:loc1.latitude
+                                                         longitude:loc1.longitude];
+    loc2.latitude    = 35.681382;
+    loc2.longitude    =139.766084;
+    CLLocation *posLocation = [[CLLocation alloc] initWithLatitude:loc2.latitude
+                                                         longitude:loc2.longitude];
+    [hole addStrokeAtLocation:nowLocation];
+    [hole addStrokeAtLocation:posLocation];
     STAssertTrue(hole.totalStroke == 2, @"Hole can Add Stroke");
 }
 
@@ -35,9 +45,17 @@
 }
 
 - (void)testStrokeCountAndLocationCountIsSame {
-    [hole addStrokeAtLocation:nil];
-    [hole addStrokeAtLocation:nil];
-    [hole addStrokeAtLocation:nil];
+    CLLocationCoordinate2D loc1, loc2;
+    loc1.latitude = 34.701909;
+    loc1.longitude = 135.4949770;
+    CLLocation *nowLocation = [[CLLocation alloc] initWithLatitude:loc1.latitude
+                                                         longitude:loc1.longitude];
+    loc2.latitude    = 35.681382;
+    loc2.longitude    =139.766084;
+    CLLocation *posLocation = [[CLLocation alloc] initWithLatitude:loc2.latitude
+                                                         longitude:loc2.longitude];
+    [hole addStrokeAtLocation:nowLocation];
+    [hole addStrokeAtLocation:posLocation];
     STAssertEquals(hole.totalStroke, [hole.locations count], @"TotalStroke and location count should be same");
 }
 

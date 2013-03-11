@@ -26,6 +26,7 @@
 		16670E4816EADB430075B622 /* HoleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16670E4716EADB430075B622 /* HoleTest.m */; };
 		16670E4D16EADC2E0075B622 /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 16670E4C16EADC2E0075B622 /* Hole.m */; };
 		1688A32F16EE1433002D11F0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1688A32E16EE1433002D11F0 /* CoreLocation.framework */; };
+		1688A33016EE1BCC002D11F0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1688A32E16EE1433002D11F0 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1688A33016EE1BCC002D11F0 /* CoreLocation.framework in Frameworks */,
 				16670E3016EADADC0075B622 /* SenTestingKit.framework in Frameworks */,
 				16670E3116EADADC0075B622 /* UIKit.framework in Frameworks */,
 				16670E3216EADADC0075B622 /* Foundation.framework in Frameworks */,
