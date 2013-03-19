@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1648323616F7FF6E00AF908B /* HoleManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1648323516F7FF6E00AF908B /* HoleManagerTest.m */; };
+		1648323916F8000900AF908B /* HoleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1648323816F8000900AF908B /* HoleManager.m */; };
 		16670E0C16EADADC0075B622 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16670E0B16EADADC0075B622 /* UIKit.framework */; };
 		16670E0E16EADADC0075B622 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16670E0D16EADADC0075B622 /* Foundation.framework */; };
 		16670E1016EADADC0075B622 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16670E0F16EADADC0075B622 /* CoreGraphics.framework */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1648323416F7FF6E00AF908B /* HoleManagerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoleManagerTest.h; sourceTree = "<group>"; };
+		1648323516F7FF6E00AF908B /* HoleManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoleManagerTest.m; sourceTree = "<group>"; };
+		1648323716F8000900AF908B /* HoleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoleManager.h; sourceTree = "<group>"; };
+		1648323816F8000900AF908B /* HoleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoleManager.m; sourceTree = "<group>"; };
 		16670E0816EADADC0075B622 /* GolfScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16670E0B16EADADC0075B622 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		16670E0D16EADADC0075B622 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -161,6 +167,8 @@
 				16670E3C16EADADC0075B622 /* GolfScoreTests.m */,
 				16670E4616EADB430075B622 /* HoleTest.h */,
 				16670E4716EADB430075B622 /* HoleTest.m */,
+				1648323416F7FF6E00AF908B /* HoleManagerTest.h */,
+				1648323516F7FF6E00AF908B /* HoleManagerTest.m */,
 				16670E3616EADADC0075B622 /* Supporting Files */,
 			);
 			path = GolfScoreTests;
@@ -188,6 +196,8 @@
 			children = (
 				16670E4B16EADC2E0075B622 /* Hole.h */,
 				16670E4C16EADC2E0075B622 /* Hole.m */,
+				1648323716F8000900AF908B /* HoleManager.h */,
+				1648323816F8000900AF908B /* HoleManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +316,7 @@
 				16670E1C16EADADC0075B622 /* AppDelegate.m in Sources */,
 				16670E2816EADADC0075B622 /* ViewController.m in Sources */,
 				16670E4D16EADC2E0075B622 /* Hole.m in Sources */,
+				1648323916F8000900AF908B /* HoleManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +326,7 @@
 			files = (
 				16670E3D16EADADC0075B622 /* GolfScoreTests.m in Sources */,
 				16670E4816EADB430075B622 /* HoleTest.m in Sources */,
+				1648323616F7FF6E00AF908B /* HoleManagerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
