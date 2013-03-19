@@ -29,4 +29,19 @@
     return self;
 }
 
+- (Hole *)holeAt:(NSUInteger)holeIndex {
+    if ([self.holes count] <= holeIndex) {
+        return nil;
+    }
+    return self.holes[holeIndex];
+}
+
+- (NSUInteger)totalStroke {
+    NSUInteger stroke = 0;
+    for (Hole *h in self.holes){
+        stroke += [h totalStroke];
+    }
+    return stroke;
+}
+
 @end

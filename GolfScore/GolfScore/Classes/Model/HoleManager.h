@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class Hole;
+
 @interface HoleManager : NSObject
 
 @property (readonly) NSMutableArray *holes;
 
 - (id)initWithPers:(NSArray *)pers;
-
+- (Hole *)holeAt:(NSUInteger)holeIndex;
+- (NSUInteger)totalStroke;
 @end
