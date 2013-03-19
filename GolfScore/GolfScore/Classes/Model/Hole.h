@@ -17,7 +17,6 @@
 
 - (id) initWithPer:(NSUInteger)per;
 - (void) addStrokeAtLocation:(CLLocation *)location;
-
-- (NSUInteger) distanceFromStartPosition;
+- (NSUInteger) distanceFromStartPositionInMiles;
 
 @end

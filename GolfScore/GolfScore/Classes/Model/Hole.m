@@ -31,7 +31,14 @@
     }
 }
 
-- (NSUInteger)distanceFromStartPosition {
+- (NSUInteger)distanceFromStartPositionInMiles {
+    if ([self.locations count] > 1) {
+        CLLocation *stt = (CLLocation *)self.locations[0];
+        CLLocation *end = (CLLocation *)[self.locations lastObject];
+        NSUInteger dist = [stt distanceFromLocation:end] * 0.000621371192;
+        NSLog(@"Total Distance %d in miles", dist);
+        return dist;
+    }
     return 0;
 }
 
